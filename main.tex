@@ -59,9 +59,9 @@
 %\usepackage[default]{raleway}
 %\usepackage{fetamont}
 %\usepackage[default]{gillius}
-\usepackage[light,math]{iwona}
+%\usepackage[light,math]{iwona} %this one
 %\usepackage[thin]{roboto} 
-
+\usepackage{gentium}
 
 % set font default
 \renewcommand*\familydefault{\sfdefault} 	
@@ -140,7 +140,7 @@
 \usepackage{color}
 
 % hyperref should be the last package used 
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 % 250 150 10 -> 
 %accent color
 \definecolor{complcol}{RGB}{250,150,10}
@@ -205,7 +205,8 @@
 \newcommand{\cvsection}[1]
 {
 \colorbox{sectcol}{\mystrut \makebox[1\mpwidth][l]{
-\textbf{\textcolor{white}{\uppercase{#1}}}\hspace{4pt}
+%\textbf{\textcolor{white}{\uppercase{#1}}}\hspace{4pt} %uncomment if you want bold
+\textcolor{white}{\uppercase{#1}}}\hspace{4pt
 }}\\
 }
 %\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{-8pt} \larrow{bgcol}
@@ -335,11 +336,11 @@
 }
 
 \newcommand{\iconhref}[5]{ 						%icon with website url
-    \vcenteredhbox{\icon{#1}{#2}{#5}} \href{#4}{\textcolor{#5}{#3}}
+    \vcenteredhbox{\icon{#1}{#2}{#5}} \vcenteredhbox{\href{#4}{\textcolor{#5}{#3}}}
 }
 
 \newcommand{\iconemail}[5]{ 						%icon with email link
-    \vcenteredhbox{\icon{#1}{#2}{#5}} \href{mailto:#4}{\textcolor{#5}{#3}}
+    \vcenteredhbox{\icon{#1}{#2}{#5}} \vcenteredhbox{\href{mailto:#4}{\textcolor{#5}{#3}}}
 }
 
 
@@ -368,7 +369,8 @@
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{\uppercase{Kevin Wang}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\uppercase{Resume}} } }}
+\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{\uppercase{Kevin Wang}} } \textcolor{sectcol}}}
+
 
 %----------------------------------------------------------------------------------------
 %	HEADER IMAGE
@@ -406,9 +408,11 @@
 %----------------------------------------------------------------------------------------
 
 \cvsection{Status}
-
-Searching for software co-op or internship placements starting Summer 2019
-
+    
+    \begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+    \larrow{softcol} Searching for software co-op or internship placements starting Summer 2019 
+	\end{tabular*}
+	
 \vspace{12pt}
 
 
@@ -417,9 +421,8 @@ Searching for software co-op or internship placements starting Summer 2019
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevent{2016-now}{BASc Computer Engineering}{University of British Columbia}{Third year student studying Computer Engineering}{Anticipated graduation date: April 2022}
+\cvevent{2016-Now}{BASc Computer Engineering}{\href{https://www.ubc.ca/}{University of British Columbia}}{Pursuing software focused Computer Engineering degree - 3.85 GPA}{Anticipated graduation date: \textbf{April 2022}}
 \vspace{12pt}
-
 
 
 %---------------------------------------------------------------------------------------
@@ -428,7 +431,7 @@ Searching for software co-op or internship placements starting Summer 2019
 \cvsection{Experience}
 
 %
-\cvbigevent{Summer 2018}{Manufacturing R\&D Engineer}{Watts Water Technologies}{Created innovative mechanical, electrical, and software solutions to increase manufacturing efficiency and lower production costs}{Brainstormed and designed a modular cartridge style clamping test stand which cut manufacturing time in 1/3 and test stand costs in 1/5}{Brainstormed and designed a slide style test stand for unique L shaped clamp stand}{Proposed action plan for improving current manufacturing standard into fully automated including handling business deals with Chinese machine manufacturers }{Fixed major LCD alignment issue with existing modules }{hello}
+\cvbigevent{Summer 2018}{Manufacturing R\&D Engineer}{\href{https://www.watts.com/}{Watts Water Technologies}}{Developed innovative mechanical, electrical, and software solutions to increase \\ manufacturing efficiency and lower production costs}{Brainstormed and manufactured a modular cartridge style clamping test stand which cut manufacturing time in 1/3 and test stand costs in 1/5}{Designed a unique slide style test stand to solve testing issues with OEM product line}{Created action plan to fully automate specific processes in our manufacturing plant and negotiated business deals with Chinese machine manufacturers }{Fixed major LCD alignment issue affecting user interface for boiler control product line}{Redesigned PCBs for older product lines to accommodate new enclosure designs and certification requirements}
 
 %\textcolor{softcol}{\hrule}
 
@@ -439,7 +442,7 @@ Searching for software co-op or internship placements starting Summer 2019
 %\textcolor{softcol}{\hrule}
 
 
-\cvbigevent{2016 - 2018}{Energy and Power Systems Lead}{UBC Orbit}{Led the Energy and Power systems sub-team for UBC’s satellite design team}{Developed I2C communication interface in C to monitor and communicate with power system and battery modules}{Simulated satellite flight paths over two year period storing access and telemetry data}{Modelled satellite power consumption through a state machine and created a power simulation of two year mission using Matlab}{Created block diagram electrical routing and power rationing for all our subsystems  }{Managed ongoing project deadlines and distributed tasks to team members}
+\cvbigevent{2016 - 2018}{Energy and Power Systems Lead}{\href{https://www.ubcorbit.com/}{UBC Orbit}}{Led the Energy and Power systems sub-team for UBC’s satellite design team}{Developed I2C communication interface in C to monitor and communicate with power system and battery modules}{Simulated satellite flight paths over two year period storing access and telemetry data}{Modelled satellite power consumption through a state machine and created a power simulation of two year mission using Matlab}{Created block diagram electrical routing and power rationing for all satellite subsystems  }{Managed ongoing project deadlines and distributed tasks to team members}
 
 %\textcolor{softcol}{\hrule}
 
@@ -462,7 +465,7 @@ Searching for software co-op or internship placements starting Summer 2019
 \end{minipage}}%
 \fcolorbox{white}{sectcol}{\begin{minipage}[c][0.95\textheight][t]{0.34\linewidth}
 
-
+\vspace{20.88pt}
 
 \begin{metasection}{Contact}
     
@@ -497,10 +500,14 @@ Searching for software co-op or internship placements starting Summer 2019
 \begin{metasection}{Software}
 
 \textcolor{white}{
-\icontext{Code}{12}{Java - 2000+ Lines}{white} \\[6pt]
-\icontext{Code}{12}{C - 1000+ Lines}{white} \\[6pt]
+
+\icontext{Code}{12}{Java - 5000+ Lines}{white} \\[6pt]
+\icontext{Code}{12}{C - 3000+ Lines}{white} \\[6pt]
 \icontext{Code}{12}{Assembly - 500+ Lines}{white}\\[6pt]
-\icontext{CodeFork}{12}{Git}{white} \\
+%\icontext{Code}{12}{C++ - Familiar}{white}\\[6pt]
+\icontext{CodeFork}{12}{Git}{white}
+
+
 }
 
 \end{metasection}
@@ -513,10 +520,10 @@ Searching for software co-op or internship placements starting Summer 2019
 }
 \end{metasection}
 
-\begin{metasection}{Technologies}
+\begin{metasection}{Manufacturing}
 
 \textcolor{white}{
-\icontext{Flash}{12}{PCB Assembly Tools}{white}\\[6pt]
+\icontext{Flash}{12}{SMT PCB Assembly}{white}\\[6pt]
 \icontext{Cogs}{12}{3D Printing}{white}\\[6pt]
 \icontext{Cogs}{12}{3-Axis CNC Machining}{white}
 }
