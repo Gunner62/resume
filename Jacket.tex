@@ -276,7 +276,7 @@
 
 }
 
-\newcommand{\cvjacketevent}[9]
+\newcommand{\cvIntelEvent}[8]
 {
 \vspace{8pt}
 	\begin{tabular*}{0.2\mpwidth}{p{0.4\mpwidth}  x{0.575\mpwidth}}
@@ -411,12 +411,12 @@
 %	STATUS
 %----------------------------------------------------------------------------------------
 
-\cvsection{Status}
+%\cvsection{Status}
     
-    \begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-    \larrow{softcol} Searching for \textbf{4 or 8 month} internship placements starting Spring 2020 
-	\end{tabular*}
-\vspace{12pt}
+%    \begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+%   \larrow{softcol} Searching for \textbf{4 or 8 month} internship placements starting January 2020 
+%	\end{tabular*}
+%\vspace{12pt}
 
 
 %---------------------------------------------------------------------------------------
@@ -424,7 +424,7 @@
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevent{Sept 2016 - Present}{BASc in Computer Engineering}{\href{https://www.ubc.ca/about/}{University of British Columbia}}{Pursuing software focused Computer Engineering degree - 3.80 GPA}{Anticipated graduation date: \textbf{May 2022}}
+\cvevent{Sept 2016 - Present}{BASc Computer Engineering}{\href{https://www.ubc.ca/about/}{University of British Columbia}}{Pursuing software focused Computer Engineering degree - 3.70 GPA}{Anticipated graduation date: \textbf{May 2022}}
 \vspace{12pt}
 
 
@@ -432,9 +432,15 @@
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
+%quantify chocolateyhours,code coverage etc. 
 
-%
-\cvbigevent{May 2018 - Aug 2018}{Manufacturing R\&D Engineer}{\href{http://www.tekmarcontrols.com/}{tekmar Control Systems}}{Developed innovative mechanical, electrical, and software solutions to increase \\ manufacturing efficiency and lower production costs}{Brainstormed and manufactured a modular cartridge style clamping test stand which cut manufacturing time in 1/3 and test stand costs in 1/10 along with another intern}{Designed a unique slide style test stand to solve testing issues with OEM product line}{Created action plan to fully automate specific processes in our manufacturing plant and negotiated equipment deals with Chinese equipment manufacturers}{Fixed major LCD alignment issue affecting user interface for boiler control product line}{Redesigned PCBs for older product lines to accommodate new enclosure designs and certification requirements}
+\cvIntelEvent{May 2019 - Present}{SoC Emulation Engineer}{\href{http://www.intel.com}{Intel Vancouver}}{Developed C++ and SystemC software simulation models of SSD hardware designs \\for pre-silicon software development, HW/SW co-validation,
+and architectural exploration}{Maintained Teamcity continuous-integration infrastructure for a team of 30+ developers, \\creating mandatory build chains and debugging critical failures on-the-spot}{Managed a Chocolatey Windows package management system with Powershell scripts to automate package install, update, and setup for a combined 100+ developers}{Wrote extensive documentation for numerous applications, including in-house \\Chocolatey patches and Teamcity agent bringup}{Coded in a Git repository containing three submodules with a high-velocity,\\agile methodology}
+%just mention pr system, mention ssd controllers in first line, 20-30 devs 
+%choco ~100 people
+%talk aobut documentation loosely follow agile ticket dashboard, jira/crucible/whatever Team followed an agile methodology using tools such as Jira, crucible and Atlassian documentation tools ~~
+%wrote releasse documentation and instructional wikis for chocolatey packages ~~add to choco lineF
+\cvbigevent{May 2018 - Aug 2018}{Manufacturing R\&D Engineer}{\href{http://www.tekmarcontrols.com/}{Tekmar Control Systems}}{Developed innovative mechanical, electrical, and software solutions to increase \\ manufacturing efficiency and lower production costs}{Brainstormed and manufactured a modular cartridge style clamping test stand which cut manufacturing time down two-thirds and test stand costs down to one-tenth of original cost}{Designed and built a unique slide style test in stand to solve electrical contact alignment issues with OEM product line}{Created action plan to fully automate temperature sensor product line in our \\manufacturing plant and negotiated equipment deals with Chinese equipment manufacturers}{Redesigned LCD enclosures in SolidWorks to solve major alignment issue affecting user interface for boiler control product line}{Ported older PCB products to accommodate new enclosures and FCC electromagnetic certification requirements}
 
 %\textcolor{softcol}{\hrule}
 
@@ -445,7 +451,7 @@
 %\textcolor{softcol}{\hrule}
 
 
-\cvbigevent{Jan 2016 - Sept 2018}{Energy and Power Systems Lead}{\href{https://www.ubcorbit.com/}{UBC Orbit}}{Led the Energy and Power systems sub-team for UBC’s satellite design team}{Developed I2C communication interface in C to monitor and communicate with power system and battery modules}{Simulated satellite flight paths over two year period storing access and telemetry data}{Modeled satellite power consumption with a state machine and created a power simulation of two year mission using Matlab}{Created block diagram electrical routing and power rationing for all satellite subsystems  }{Managed ongoing project deadlines and distributed tasks to team members}
+
 
 %\textcolor{softcol}{\hrule}
 
@@ -453,11 +459,11 @@
 \vspace{12pt}
 
 
-\cvsection{Technical Projects}
+\cvsection{Design Team}
 
-\cvjacketevent{Sept 2017 - April 2018}{Wayfinder Smart Jacket}{\href{https://github.com/Gunner62/GPS-Jacket-Project}{Capstone Project}}{Brainstormed, prototyped, and designed a functional smart jacket for Vancouver cyclists}{Provided hands free navigation through vibration in either arm using Google Maps API}{Created a hands-free LED signalling system for low visibility conditions triggered by specific hand signals}{Prototyped android app to set routes with Google Maps and activate turn signals over Bluetooth using MIT App Inventor}{Recognized as one of the best engineering projects at Design and Innovation Day at UBC}
+%\cvjacketevent{Sept 2017 - April 2018}{Wayfinder Smart Jacket}{\href{https://github.com/Gunner62/GPS-Jacket-Project}{Capstone Project}}{Brainstormed, prototyped, and designed a functional smart jacket for Vancouver cyclists}{Provided hands free navigation through vibration in either arm using Google Maps API}{Created a hands-free LED signalling system for low visibility conditions triggered by specific hand signals}{Prototyped android app to set routes with Google Maps and activate turn signals over Bluetooth using MIT App Inventor}{Recognized as one of the best engineering projects at Design and Innovation Day at UBC}
 
-
+\cvbigevent{Jan 2016 - Sept 2018}{Electrical \& Power Systems Lead}{\href{https://www.ubcorbit.com/}{UBC Orbit}}{Handled power management and electronic systems design for UBC's micro-satellite design team, becoming lead in the end of 2017}{Developed I2C communication interface in C to retrieve telemetry from and communicate with power system and battery modules}{Simulated satellite flight paths in Systems Tool Kit, parsing communication access and telemetry data for a two year period using MATLAB}{Modeled satellite power consumption with a state machine and created a power simulation model of mission lifetime using Matlab}{Created block diagram electrical routing and power rationing for all satellite subsystems}{Managed ongoing project deadlines and distributed tasks to team members}
 
 
 
@@ -503,54 +509,62 @@
 \begin{metasection}{Software}
 
 \textcolor{white}{
-
+% \icontext{Code}{12}{VHDL}{white}\\[6pt]
+\icontext{Code}{12}{C, C++, \& System C}{white}\\[6pt]
+\icontext{Code}{12}{Assembly (8051)}{white}\\[6pt]
 \icontext{Code}{12}{Java}{white} \\[6pt]
-\icontext{Code}{12}{JUnit}{white} \\[6pt]
-\icontext{Code}{12}{C}{white} \\[6pt]
-\icontext{Code}{12}{VHDL}{white}\\[6pt]
-\icontext{Code}{12}{Assembly}{white}\\[6pt]
-\icontext{Code}{12}{C++}{white}\\[6pt]
+\icontext{Code}{12}{Gradle}{white} \\[6pt]
 \icontext{Code}{12}{Python}{white}\\[6pt]
-\icontext{Code}{12}{HTML}{white}\\[6pt]
-\icontext{Code}{12}{CSS}{white}\\[6pt]
-\icontext{CodeFork}{12}{Version Control}{white}
-
+\icontext{Code}{12}{Powershell Scripting}{white}\\[6pt]
+\icontext{Code}{12}{Unix Environments}{white}\\[6pt]
+\icontext{Code}{12}{HTML \& CSS}{white}\\[6pt]
+\icontext{Code}{12}{JSON}{white}\\[6pt]
+\icontext{Code}{12}{NodeJS}{white}\\[6pt]
+\icontext{CodeFork}{12}{Git}{white}\\[6pt]
+\icontext{Flash}{12}{Arduino \& Raspberry Pi}{white}
+% \icontext{Code}{12}{HTML}{white}\\[6pt]
+% \icontext{Code}{12}{CSS}{white}\\[6pt]
 }
-
 \end{metasection}
 
-\begin{metasection}{CAD}
+\begin{metasection}{Modeling Tools}
 
 \textcolor{white}{
 \icontext{Flash}{12}{Altium Designer}{white}\\[6pt] 
-\icontext{Gears}{12}{SolidWorks}{white}
+\icontext{Gears}{12}{SolidWorks}{white}\\[6pt]
+\icontext{Flash}{12}{NI Multisim}{white}\\[6pt] 
+\icontext{Flash}{12}{Quartus Prime}{white}
 }
 \end{metasection}
 
 \begin{metasection}{Manufacturing}
 
 \textcolor{white}{
-\icontext{Flash}{12}{SMT PCB Assembly}{white}\\[6pt]
+\icontext{Flash}{12}{PCB Assembly}{white}\\[6pt]
 \icontext{Cogs}{12}{3D Printing}{white}\\[6pt]
-\icontext{Cogs}{12}{3-Axis CNC Machining}{white}
+\icontext{Cogs}{12}{CNC Machining}{white}
 }
 \end{metasection}
 
 
 \begin{metasection}{Hobbies}
 
-\icontext{Gamepad}{12}{Competitive E-Sports}{white}\\[6pt]
+\icontext{Gamepad}{12}{Competitive Gaming (Ask Me!)}{white}\\[6pt]
+%\icontext{}{12}{Top 50 ranked Heroes of the Storm}{white}\\[6pt]
+%\icontext{}{12}{Top 0.1\% ranked League of Legends}{white}\\[6pt]
+%\icontext{}{12}{Top 0.1\% ranked Teamfight Tactics}{white}\\[6pt]
+\icontext{Archive}{12}{Farming}{white}\\[6pt]
 \icontext{Music}{12}{Piano}{white}\\[6pt]
-\icontext{Dribbble}{12}{Badminton}{white}\\[6pt]
+\icontext{Dribbble}{12}{Badminton}{white}
 \end{metasection}
 
-\begin{metasection}{Languages}
+%\begin{metasection}{Languages}
 
-\icontext{Language}{12}{English - Native}{white}\\[6pt]
-\icontext{Language}{12}{Mandarin - ILR Level 2}{white}\\[6pt]
-\icontext{Language}{12}{French - ILR Level 2}{white}
+%\icontext{Language}{12}{English - Native}{white}\\[6pt]
+%\icontext{Language}{12}{Mandarin - ILR Level 2}{white}\\[6pt]
+%\icontext{Language}{12}{French - ILR Level 2}{white}
 
-\end{metasection}
+%\end{metasection}
 
 %---------------------------------------------------------------------------------------
 %	QR CODE (optional)
