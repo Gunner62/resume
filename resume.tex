@@ -146,7 +146,7 @@
 \usepackage[hidelinks]{hyperref}
 % 250 150 10 -> 
 %accent color
-\definecolor{complcol}{RGB}{250,150,10}
+\definecolor{complcol}{RGB}{250,140,0}
 
 %dark background color
 \definecolor{bgcol}{RGB}{110,110,110}
@@ -241,7 +241,7 @@
 \vspace{8pt}
 	%\begin{tabular*}{1\mpwidth}{p{0.48\mpwidth}  x{0.5\mpwidth}}
 	\begin{tabular*}{0.2\mpwidth}{p{0.4\mpwidth}  x{0.575\mpwidth}}
- 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{bgcol}{#1} 
+ 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{black}{#1} 
 
 	\end{tabular*}
 \vspace{-12pt}
@@ -259,7 +259,7 @@
 \vspace{8pt}
 	%\begin{tabular*}{1\mpwidth}{p{0.48\mpwidth}  x{0.5\mpwidth}}
 	\begin{tabular*}{0.2\mpwidth}{p{0.4\mpwidth}  x{0.575\mpwidth}}
- 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{bgcol}{#1} 
+ 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{black}{#1} 
 
 	\end{tabular*}
 \vspace{-12pt}
@@ -280,7 +280,7 @@
 {
 \vspace{8pt}
 	\begin{tabular*}{0.2\mpwidth}{p{0.4\mpwidth}  x{0.575\mpwidth}}
- 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{bgcol}{#1} 
+ 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{black}{#1} 
 
 	\end{tabular*}
 \vspace{-12pt}
@@ -424,7 +424,7 @@
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevent{Sept 2016 - Present}{BASc Computer Engineering}{\href{https://www.ubc.ca/about/}{University of British Columbia}}{Pursuing software focused Computer Engineering degree - \textbf{3.70 GPA}}{Anticipated graduation date - \textbf{May 2022}}
+\cvevent{Sept 2016 - Present}{BASc Computer Engineering}{\href{https://www.ubc.ca/about/}{University of British Columbia}}{Pursuing software focused Computer Engineering degree - 3.70 GPA}{Anticipated graduation date - \textbf{May 2022}}
 \vspace{12pt}
 
 
@@ -435,12 +435,12 @@
 %quantify chocolateyhours,code coverage etc. 
 
 \cvIntelEvent{May 2019 - Present}{SoC Emulation Engineer}{\href{http://www.intel.com}{Intel Vancouver}}{Developed C++ and SystemC software simulation models of SSD hardware designs \\for pre-silicon software development, HW/SW co-validation,
-and architectural exploration}{Maintained Teamcity continuous-integration infrastructure for a team of 30+ developers, \\creating mandatory build chains and debugging critical failures on-the-spot}{Managed a Chocolatey Windows package management system with Powershell scripts to automate package install, update, and setup for a combined 100+ developers}{Wrote extensive documentation for numerous applications, including in-house \\Chocolatey patches and Teamcity agent bringup}{Coded in a Git repository containing three submodules with a high-velocity,\\agile methodology}
+and architectural exploration}{Maintained Teamcity continuous-integration infrastructure for a team of 30+ developers, \\creating mandatory build chains and debugging critical failures on-the-spot}{Managed a Chocolatey Windows package management system with Powershell scripts to automate package install, update, and setup for a combined 100+ developers}{Wrote extensive documentation for numerous applications, including in-house Chocolatey patches and Teamcity agent bringup}{Created a Gradle build to validate git branches, preventing outdated submodule pointers and branches from wasting continuous integration resources}
 %just mention pr system, mention ssd controllers in first line, 20-30 devs 
 %choco ~100 people
 %talk aobut documentation loosely follow agile ticket dashboard, jira/crucible/whatever Team followed an agile methodology using tools such as Jira, crucible and Atlassian documentation tools ~~
 %wrote releasse documentation and instructional wikis for chocolatey packages ~~add to choco lineF
-\cvbigevent{May 2018 - Aug 2018}{Manufacturing R\&D Engineer}{\href{http://www.tekmarcontrols.com/}{Tekmar Control Systems}}{Developed innovative mechanical, electrical, and software solutions to increase \\ manufacturing efficiency and lower production costs}{Brainstormed and manufactured a modular cartridge style clamping test stand which cut manufacturing time down two-thirds and test stand costs down to one-tenth of original cost}{Designed and built a unique slide style test in stand to solve electrical contact alignment issues with OEM product line}{Created action plan to fully automate temperature sensor product line in our \\manufacturing plant and negotiated equipment deals with Chinese equipment manufacturers}{Redesigned LCD enclosures in SolidWorks to solve major alignment issue affecting user interface for boiler control product line}{Ported older PCB products to accommodate new enclosures and FCC electromagnetic certification requirements}
+\cvbigevent{May 2018 - Aug 2018}{Manufacturing R\&D Engineer}{\href{http://www.tekmarcontrols.com/}{Tekmar Control Systems}}{Developed innovative mechanical, electrical, and software solutions to increase \\manufacturing efficiency and lower production costs}{Brainstormed and manufactured a modular cartridge style clamping test stand which cut manufacturing time down two-thirds and test stand costs down to one-tenth of original cost}{Designed and built a unique slide-in test stand to solve electrical contact alignment issues with OEM product line}{Created action plan to fully automate temperature sensor product line in our manufacturing plant and negotiated equipment deals with Chinese equipment manufacturers}{Redesigned LCD enclosures in SolidWorks to solve major alignment issue affecting user interface for boiler control product line}{Ported older PCB products to accommodate new enclosures and FCC electromagnetic certification requirements}
 
 %\textcolor{softcol}{\hrule}
 
@@ -463,7 +463,7 @@ and architectural exploration}{Maintained Teamcity continuous-integration infras
 
 %\cvjacketevent{Sept 2017 - April 2018}{Wayfinder Smart Jacket}{\href{https://github.com/Gunner62/GPS-Jacket-Project}{Capstone Project}}{Brainstormed, prototyped, and designed a functional smart jacket for Vancouver cyclists}{Provided hands free navigation through vibration in either arm using Google Maps API}{Created a hands-free LED signalling system for low visibility conditions triggered by specific hand signals}{Prototyped android app to set routes with Google Maps and activate turn signals over Bluetooth using MIT App Inventor}{Recognized as one of the best engineering projects at Design and Innovation Day at UBC}
 
-\cvbigevent{Jan 2016 - Sept 2018}{Electrical \& Power Systems Lead}{\href{https://www.ubcorbit.com/}{UBC Orbit}}{Led power management and electronic systems design for UBC's micro-satellite design team}{Developed I2C communication interface in C to retrieve telemetry from and communicate with power system and battery modules}{Simulated satellite flight paths in Systems Tool Kit, parsing communication access and telemetry data for a two year period using MATLAB}{Modeled satellite power consumption with a state machine and created a power simulation model of mission lifetime using Matlab}{Created block diagram electrical routing and power rationing for all satellite subsystems}{Managed ongoing project deadlines and distributed tasks to team members}
+\cvbigevent{Jan 2016 - Sept 2018}{Electrical \& Power Systems Lead}{\href{https://www.ubcorbit.com/}{UBC Orbit}}{Led power management and electronic systems design for UBC's micro-satellite design team}{Developed I$^2$C communication interface in C to retrieve telemetry from and communicate with power system and battery modules}{Simulated satellite flight paths in Systems Tool Kit, parsing raw communication access and telemetry data for a two year period using MATLAB}{Modeled satellite power consumption with a state machine and created a power simulation model of mission using MATLAB}{Created block diagram electrical routing and power rationing for all satellite subsystems}{Managed ongoing project deadlines and distributed tasks to team members}
 
 
 
@@ -513,6 +513,7 @@ and architectural exploration}{Maintained Teamcity continuous-integration infras
 \icontext{Code}{12}{C, C++, \& System C}{white}\\[6pt]
 \icontext{Code}{12}{Assembly (8051)}{white}\\[6pt]
 \icontext{Code}{12}{Java}{white} \\[6pt]
+\icontext{Code}{12}{MATLAB}{white}\\[6pt]
 \icontext{Code}{12}{Gradle}{white} \\[6pt]
 \icontext{Code}{12}{Python}{white}\\[6pt]
 \icontext{Code}{12}{Powershell Scripting}{white}\\[6pt]
